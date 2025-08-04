@@ -57,7 +57,6 @@ const MarketTrends = () => {
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold mb-10 text-center text-purple-300">📊 Yearly Market Trends</h2>
 
-        {/* Line Chart */}
         <div className="bg-[#1f1147] rounded-xl shadow-xl p-6 mb-12">
           <Line data={data} options={options} />
         </div>
@@ -74,7 +73,6 @@ const MarketTrends = () => {
           </Marquee>
         </div>
 
-        {/* Future of Crypto */}
         <div className="mt-10 bg-[#1f1147] border border-purple-800 rounded-lg p-8 shadow-lg">
           <div className="flex items-center space-x-3 mb-4">
             <Sparkles className="text-purple-400" />
