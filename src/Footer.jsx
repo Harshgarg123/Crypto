@@ -12,7 +12,7 @@ const Footer = () => {
     <footer className="bg-[#0b0b0c] text-gray-400">
       <div className="max-w-7xl mx-auto px-6 pt-16 pb-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-12">
         
-        {/* Logo + Contact */}
+        
         <div>
           <div className="flex items-center gap-3 mb-4">
             <div className="bg-gradient-to-tr from-purple-500 to-indigo-500 p-3 rounded-full">
