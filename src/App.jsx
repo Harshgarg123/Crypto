@@ -1,16 +1,16 @@
 // App.jsx
 import React, { useRef } from 'react';
 import Header from './Header';
-import HeroSection from './HeroSection';
-import SquareSection from './Square';
+import HeroSection from './Hero';
+import SquareSection from './squares';
 import FuturesSection from './Future';
 import MoreSection from './Contact';
 import EarnSection from './Live';
-import MarketPage from './Market';
-import BuyCryptoPage from './Buy';
+import MarketPage from './Trends';
+import BuyCryptoPage from './Premium';
 import TradeSection from './Trade';
 import Footer from './Footer';
-import Buy from './Buy';
+import Buy from './Premium';
 
 const App = () => {
   

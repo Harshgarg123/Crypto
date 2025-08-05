@@ -39,7 +39,7 @@ const Header = ({
     <header className="bg-[#0f0c29]/90 backdrop-blur-md text-white px-6 py-4 flex justify-between items-center sticky top-0 z-50 border-b border-purple-500/20">
       
       <div onClick={scrollToHero} className="flex items-center gap-3 cursor-pointer">
-        <img src="https://cdn2.iconfinder.com/data/icons/investing-crayons-vol-1/256/Cryptocurrency_Investment-1024.png"
+        <img src="https://cdn1.iconfinder.com/data/icons/cryptocurrency-blockchain-fintech/32/Cryptocurrency_Ripple_XRP-512.png"
              alt="Crypto Logo" className="w-10 h-10 animate-pulse" />
         <h1 className="text-2xl font-bold font-[Orbitron] tracking-wide bg-gradient-to-r from-fuchsia-400 via-purple-500 to-cyan-400 bg-clip-text text-transparent">
           NΞON CRYPTΞ

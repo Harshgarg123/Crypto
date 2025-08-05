@@ -71,12 +71,12 @@ const BuyCrypto = () => {
             <p className="text-sm text-gray-300 mt-1">Visa, MasterCard, AMEX</p>
           </div>
           <div className="bg-white/10 p-5 rounded-lg hover:scale-105 transition backdrop-blur-md shadow-md w-56">
-            <img src="https://cryptologos.cc/logos/bitcoin-btc-logo.png" alt="Bitcoin" className="w-8 h-8 mx-auto mb-3" />
+            <img src="bitcoin-btc-logo.png" alt="Bitcoin" className="w-8 h-8 mx-auto mb-3" />
             <h4 className="text-white font-semibold">Pay with Bitcoin</h4>
             <p className="text-sm text-gray-300 mt-1">Fast, secure, and global</p>
           </div>
           <div className="bg-white/10 p-5 rounded-lg hover:scale-105 transition backdrop-blur-md shadow-md w-56">
-            <img src="https://cryptologos.cc/logos/ethereum-eth-logo.png" alt="Ethereum" className="w-8 h-8 mx-auto mb-3" />
+            <img src="ethereum-eth-logo.png" alt="Ethereum" className="w-8 h-8 mx-auto mb-3" />
             <h4 className="text-white font-semibold">Pay with Ethereum</h4>
             <p className="text-sm text-gray-300 mt-1">Smart and decentralized</p>
           </div>

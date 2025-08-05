@@ -1,105 +1,126 @@
 import React from "react";
 import {
-  
   ShieldCheck,
+  Facebook,
+  Twitter,
+  Instagram,
+  Linkedin
 } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0c0c0d] text-white pt-16 pb-10">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
-       
+    <footer className="bg-[#0b0b0c] text-gray-400">
+      <div className="max-w-7xl mx-auto px-6 pt-16 pb-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-12">
+        
+        {/* Logo + Contact */}
         <div>
           <div className="flex items-center gap-3 mb-4">
-            <div className="bg-gradient-to-tr from-purple-500 to-indigo-500 p-2 rounded-full">
+            <div className="bg-gradient-to-tr from-purple-500 to-indigo-500 p-3 rounded-full">
               <ShieldCheck className="text-white w-6 h-6" />
             </div>
-            <h2 className="text-2xl font-bold tracking-tight"> NΞON CRYPTΞ</h2>
+            <h2 className="text-2xl font-extrabold text-white tracking-tight">
+              NΞON CRYPTΞ
+            </h2>
           </div>
-          <p className="text-sm text-gray-400 mb-2">Let’s connect 🔗</p>
-          <p className="text-sm text-gray-300 mb-1">📞 +91 45454345458</p>
-          <p className="text-sm text-gray-300 mb-1">📩  NΞON CRYPTΞ@gmail.com</p>
-          <p className="text-sm text-gray-300">
-            📍 711-2880 Nulla St. Mankato, MS 96522
-          </p>
-        </div>
-
-       
-        <div>
-          <h4 className="text-white font-semibold mb-4">Products</h4>
-          <ul className="space-y-2 text-gray-400 text-sm">
-            <li className="hover:text-white transition">Spot</li>
-            <li className="hover:text-white transition">Perpetuals</li>
-            <li className="hover:text-white transition">Staking</li>
-            <li className="hover:text-white transition">NFT Launchpad</li>
-            <li className="hover:text-white transition">Crypto Wallet</li>
+          <p className="text-sm mb-2">Let’s connect 🔗</p>
+          <ul className="text-sm space-y-1">
+            <li>📞 +91 45454345458</li>
+            <li>📩 NΞONCRYPTΞ@gmail.com</li>
+            <li>📍 711 Nulla St, Mankato, MS 96522</li>
           </ul>
         </div>
 
-       
-        <div>
-          <h4 className="text-white font-semibold mb-4">Services</h4>
-          <ul className="space-y-2 text-gray-400 text-sm">
-            <li className="hover:text-white transition">Buy Crypto</li>
-            <li className="hover:text-white transition">Live Markets</li>
-            <li className="hover:text-white transition">Portfolio Tracker</li>
-            <li className="hover:text-white transition">Referral Program</li>
-            <li className="hover:text-white transition">Crypto Academy</li>
-          </ul>
-        </div>
-
-        
-        <div>
-          <h4 className="text-white font-semibold mb-4">Support</h4>
-          <ul className="space-y-2 text-gray-400 text-sm">
-            <li className="hover:text-white transition">Help Center</li>
-            <li className="hover:text-white transition">Security FAQs</li>
-            <li className="hover:text-white transition">User Feedback</li>
-            <li className="hover:text-white transition">API Docs</li>
-            <li className="hover:text-white transition">Trading Rules</li>
-          </ul>
-        </div>
-
-        
-        <div>
-          <h4 className="text-white font-semibold mb-4">Company</h4>
-          <ul className="space-y-2 text-gray-400 text-sm">
-            <li className="hover:text-white transition">About Us</li>
-            <li className="hover:text-white transition">Our Mission</li>
-            <li className="hover:text-white transition">Careers</li>
-            <li className="hover:text-white transition">Blog</li>
-            <li className="hover:text-white transition">Contact</li>
-          </ul>
-        </div>
+        {/* Columns */}
+        {[
+          {
+            title: "Products",
+            links: [
+              "Spot",
+              "Perpetuals",
+              "Staking",
+              "NFT Launchpad",
+              "Crypto Wallet"
+            ]
+          },
+          {
+            title: "Services",
+            links: [
+              "Buy Crypto",
+              "Live Markets",
+              "Portfolio Tracker",
+              "Referral Program",
+              "Crypto Academy"
+            ]
+          },
+          {
+            title: "Support",
+            links: [
+              "Help Center",
+              "Security FAQs",
+              "User Feedback",
+              "API Docs",
+              "Trading Rules"
+            ]
+          },
+          {
+            title: "Company",
+            links: [
+              "About Us",
+              "Our Mission",
+              "Careers",
+              "Blog",
+              "Contact"
+            ]
+          }
+        ].map((section, index) => (
+          <div key={index}>
+            <h4 className="text-white font-semibold mb-4 text-lg">
+              {section.title}
+            </h4>
+            <ul className="space-y-2 text-sm">
+              {section.links.map((link, i) => (
+                <li
+                  key={i}
+                  className="hover:text-white transition duration-200 cursor-pointer"
+                >
+                  {link}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
 
-      {/* Bottom */}
-      <div className="border-t border-gray-800 mt-12 pt-6 text-center text-sm text-gray-500">
-        <p>
-          © {new Date().getFullYear()} CryptoX. All Rights Reserved by{" "}
-          <a
-            href="https://github.com/Harshgarg123"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-purple-400 hover:text-white transition"
-          >
-            Harsh
-          </a>
-        </p>
+      {/* Bottom Bar */}
+      <div className="border-t border-gray-800 mt-10 pt-6">
+        <div className="flex flex-col sm:flex-row justify-between items-center max-w-7xl mx-auto px-6 text-sm text-gray-500">
+          <p className="mb-4 sm:mb-0">
+            © {new Date().getFullYear()} NΞON CRYPTΞ. All Rights Reserved by{" "}
+            <a
+              href="https://github.com/Harshgarg123"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-purple-400 hover:text-white transition"
+            >
+              Harsh
+            </a>
+          </p>
 
-        <div className="flex justify-center gap-6 mt-4">
-          <a href="#" className="hover:text-blue-500 transition">
-            <Facebook size={18} />
-          </a>
-          <a href="#" className="hover:text-blue-400 transition">
-            <Twitter size={18} />
-          </a>
-          <a href="#" className="hover:text-pink-500 transition">
-            <Instagram size={18} />
-          </a>
-          <a href="#" className="hover:text-blue-600 transition">
-            <Linkedin size={18} />
-          </a>
+          {/* Socials */}
+          <div className="flex gap-4">
+            <a href="#" className="hover:text-white transition">
+              <Facebook size={18} />
+            </a>
+            <a href="#" className="hover:text-white transition">
+              <Twitter size={18} />
+            </a>
+            <a href="#" className="hover:text-white transition">
+              <Instagram size={18} />
+            </a>
+            <a href="#" className="hover:text-white transition">
+              <Linkedin size={18} />
+            </a>
+          </div>
         </div>
       </div>
     </footer>
