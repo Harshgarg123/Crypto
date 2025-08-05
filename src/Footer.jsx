@@ -30,7 +30,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Columns */}
+        
         {[
           {
             title: "Products",
@@ -91,7 +91,7 @@ const Footer = () => {
         ))}
       </div>
 
-      {/* Bottom Bar */}
+      
       <div className="border-t border-gray-800 mt-10 pt-6">
         <div className="flex flex-col sm:flex-row justify-between items-center max-w-7xl mx-auto px-6 text-sm text-gray-500">
           <p className="mb-4 sm:mb-0">
@@ -106,7 +106,7 @@ const Footer = () => {
             </a>
           </p>
 
-          {/* Socials */}
+         
           <div className="flex gap-4">
             <a href="#" className="hover:text-white transition">
               <Facebook size={18} />
